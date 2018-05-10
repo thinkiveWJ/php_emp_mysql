@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<!--meta标签描述网页摘要具体信息-->
+		
+		<!--属性"http-equiv",是名称，代表服务器相应的类型； 属性"content-type"是值， 代表发送给服务器文档内容的类型-->
+		<!--"content"表示文档内容类型；"text/html"表示文档内容类型为HTML文件；"charset"表示字符编码；"UTF-8"表示字符编码的值-->
+		<!--或者是<meta  />-->
+		<meta http-equiv="Content-Type"  content="text/html;charset=UTF-8" />
+		
+		<!--是否允许移动设备缩放-->
+		<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+         
+        <!--在ios设备上，防止自动把多位数字之别成电话号码-->
+        <meta name="format-detection" content="telephone=no">
+          
+    	<!--标头可指定页面支持的 Internet Explorer 版本-->
+    	<!--<meta http-equiv="X-UA-Compatible" content="IE=5" />--> 
+    	
+    	<!--Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容，这实际上破坏了“锁定”模式。--> 
+    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    	
+    	<!--将下面的 <meta> 标签加入到页面中，可以让部分国产浏览器默认采用高速模式渲染页面-->
+    	<meta name="renderer" content="webkit">
+    	
+		<!--seo搜索引擎优化-->
+		<title>首页</title>
+		<meta name="Keywords" content="雇员管理系统"/>
+		<meta name="Description" content="这是一个用于学习的雇员管理系统的网站" />
+		
+		<!--网页ico图标-->
+		<!-- <link rel="shortcut icon" href="../img/favicon.ico" /> -->
+		
+		<!--css文件同时被加载， @import的css文件会等下载完毕后再加载-->
+		<link rel="stylesheet" href="../static/css/bootstrap.css" charset="UTF-8"/>
+		<link rel="stylesheet" href="../static/css/base.css" charset="UTF-8" />
+		<!--<div id="dom001"><span>jquery获取数据</span></div>-->
+		<script type="text/javascript" src="../static/js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../static/js/bootstrap.js"></script>
+		<script type="text/javascript" src="../static/js/common.js"></script>
+		<script type="text/javascript" src="../static/js/md5.js"></script>
+		<!--[if lt IE 9]>
+			<script src="../static/js/html5shiv.min.js"></script>
+	    	<script src="../static/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			
+		</div>
+		<div id="dialog-error" class="modal fade" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">错误提示</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p id="errorMsg"></p>
+		      </div>
+		      <div class="modal-footer">
+		        <a type="button" class="btn btn-default" data-dismiss="modal">关闭</a>
+		        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<script type="text/javascript">
+	    $(function(){
+		    
+	    });
+		</script>
+	</body>
+</html>
